@@ -1,0 +1,52 @@
+*********Requirements**********
+
+    python 3.5.2 version
+
+*******************************
+
+==================================Execution of code==================================================
+
+1.Steps to run the game:
+    ~ Go to folder that contains SSAD folder
+    ~ Switch into SSAD folder
+    ~ python3 gameplay.py (This is to be written in the command line to start playing game)
+2.Controls of game:
+    ~ 'w' for moving bomberman by 1 step up (if possible)
+    ~ 's' for moving bomberman by 1 step down (if possible)
+    ~ 'a' for moving bomberman by 1 step left (if possible)
+    ~ 'd' for moving bomberman by 1 step right (if possible)
+    ~ 'b' for placing bomb at current location of bomberman
+        (i.e; where bomberman is present when key 'b' is given as input)
+3.player's Score:
+    ~ Players score will be printed below the grid
+    ~ Score :
+        -> score increases by 20 when brick is destroyed
+        -> score increases by 100 when enemy dies
+4.Time remaining:
+    ~ Time left to play game will be printed below the grid(default is set to 30)
+5.No of lives:
+    ~ default no of lives is set to 3
+    ~ whenever bomberman dies , he regenarates in the same place
+=====================================================================================================
+
+=====================================================================================================
+--------------------------Game quits when timeleft is 0 or no of lives is 0--------------------------
+=====================================================================================================
+
+################################# How to interpret the code #########################################
+
+Classes:
+    ~ Board :
+      -> This class contains methods to create empty board,populate rigid walls init
+    ~ Brick :
+      -> This class has methods to populate bricks randomly on the board
+    ~ Bomb:
+      -> This class has methods to placeBomb and explodeBomb
+    ~ Person:
+      -> This class has methods to move objects of type Person(enemy,bomb)
+    ~ Bomberman :
+      -> This class has methods to create person of type Bomberman
+    ~ Enemy:
+      -> This class has methods to create person of type Enemy , randomly move them
+
+###################################################################################################      
